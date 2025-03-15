@@ -29,12 +29,12 @@ Também é recomendado utilizar um editor de código como o Visual Studio Code.
 
 ```bash
 # 1️⃣ Clone o repositório:
-git clone 
+git clone https://github.com/Lucassml-boop/teste-front-end.git 
 ```
 
 ```bash
 # 2️⃣ Navegue até o diretório do projeto:
-cd teste-front-end-jr
+cd teste-front-end
 ```
 
 ```bash
