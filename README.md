@@ -54,4 +54,3 @@ npm run dev
 npm run build
 ```
 ## A aplicação estará disponível em http://localhost:5173.
->>>>>>> 8306e56 (Primeiro commit)
