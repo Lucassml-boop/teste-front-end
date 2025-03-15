@@ -1,0 +1,200 @@
+.headerContainer
+  max-width: 1280px
+  margin: 0 auto
+  background-color: #ece4e4
+
+  font-family: 'Poppins', sans-serif
+  font-weight: bold
+
+
+.topBar
+  display: flex
+  justify-content: space-around
+  padding: 5px 0
+  background-color: #fff
+  font-size: 12px
+  border-bottom: 1px solid #e1e1e1
+
+.topBarItem
+  display: flex
+  align-items: center
+  font-weight: 500
+  color: #9f9f9f
+
+  svg
+    font-size: 16px
+    color: #666
+    margin-right: 5px
+
+  p
+    margin: 0
+    color: #9F9F9F
+    font-weight: bold
+
+    span
+      font-weight: bold
+      color: #3d27b7
+
+.mainBar
+  display: flex
+  align-items: center
+  padding: 10px 0
+  background-color: #FFFFFF
+   justify-content:space-evenly
+
+.logoContainer
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 30px
+  padding-left: 30px
+
+.searchBar
+  display: flex
+  align-items: center
+  width: 657px
+  height: 48px
+  background-color: #f4f4f4
+  border-radius: 10px
+  margin-left: 20px
+
+.searchInput
+  flex-grow: 1
+  height: 100%
+  padding: 0 15px
+  border: none
+  border-radius: 10px 0 0 10px
+  outline: none
+  font-size: 14px
+  color: #9F9F9F
+  background-color: #f4f4f4
+
+.searchButton
+  background-color: transparent
+  border: none
+  padding: 0 15px
+  cursor: pointer
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 0 10px 10px 0
+
+  svg
+    color: #666
+    font-size: 18px
+
+.iconSet
+  display: flex
+  align-items: center
+  gap: 25px
+  padding-right: 20px
+  margin-left: 60px
+
+  svg
+    font-size: 20px
+    color: #666
+    cursor: pointer
+
+.navBar
+  display: flex
+  justify-content: space-around
+  padding: 10px 0
+  border: 1px
+  background-color: #fff
+  font-size: 12px
+  color: #9F9F9F
+  border-top: 1px solid #e1e1e1
+
+  p
+    margin: 0
+    cursor: pointer
+    text-transform: uppercase
+    font-weight: 600
+    color: #9F9F9F
+    font-family: 'Poppins', sans-serif
+
+    &.activeCategoryBar
+      color: #3019B2
+
+    &:hover
+      color: #3019B2
+
+  .highlight
+    color: #3d27b7
+    font-weight: 600
+    font-family: 'Poppins', sans-serif
+
+.activeCategoryBar
+  color: #3019B2
+
+
+
+.iconWithText
+  display: flex
+  align-items: center
+  gap: 5px
+
+  svg
+    font-size: 18px
+    color: #666
+    cursor: pointer
+
+
+
+@media (max-width: 768px)
+  .headerContainer
+    padding: 0 10px
+
+  .topBar
+
+    align-items: center
+    text-align: center
+
+  .mainBar
+    flex-direction: column
+    align-items: center
+
+  .logoContainer
+    margin-right: 100px
+    padding-left: 15px
+    position: relative
+    right: 20px
+
+  .searchBar
+    width: 100%
+    margin-left: 0
+    margin-top: 10px
+
+  .iconSet
+    padding-right: 0
+    margin-top: 10px
+
+  .navBar
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+@media (max-width: 480px)
+  .searchInput
+    font-size: 12px
+    color: #F6F5F2
+
+  .searchButton
+    svg
+      font-size: 16px
+
+  .icon
+    width: 24px
+    height: 24px
+
+  .vectorIcon
+    width: 20px
+    height: 20px
+
+  .navBar
+    font-size: 10px
+
+@media (min-width: 800px)
+  .hamburgerButton
+    display: none

@@ -1,0 +1,275 @@
+.footer
+  width: 100%
+  background: #F4F4F4
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 30px
+  font-family: 'Poppins'
+
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+
+  @media (min-width: 768px)
+    flex-direction: row
+    justify-content: space-evenly
+
+
+.section
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  margin-right: 50px
+  flex-direction: column
+
+  @media (min-width: 768px)
+    align-items: flex-start
+
+  .logo
+    width: 153px
+    height: 46px
+
+  .about
+   font-size: 14px
+   font-weight: 500
+   color: #222222B5
+
+
+  h4
+    font-size: 14px
+    color: #222222B5
+    margin-bottom: 10px
+
+  ul
+    list-style: none
+    padding: 0
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+    li
+      font-family: 'Poppins'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 16px
+      color: rgba(34, 34, 34, 0.71)
+      cursor: pointer
+
+      &:hover
+        color: #271c47
+
+.socialMedia
+  display: flex
+  margin-top: 20px
+
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-color: #f4f4f4
+    transition: background-color 0.3s ease, transform 0.3s ease
+
+    &:hover
+      background-color: #e0e0e0
+      transform: scale(1.1)
+
+  img
+    cursor: pointer
+    transition: transform 0.3s ease
+
+    &:hover
+      transform: scale(1.1)
+
+.newsletter
+  width: 100%
+  height: auto
+  background: #271C47
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 20px
+
+  @media (min-width: 768px)
+    flex-direction: row
+    justify-content: space-around
+    padding: 0 80px
+    height: 162px
+
+  .newsletterContent
+    display: flex
+    flex-direction: column
+    gap: 8px
+    align-items: center
+
+    @media (min-width: 768px)
+      align-items: flex-start
+
+    .newsletterTitle
+      font-family: 'Poppins'
+      font-style: normal
+      font-weight: 600
+      font-size: 32px
+      line-height: 120%
+      color: #FFFFFF
+
+      @media (max-width: 767px)
+        font-size: 24px
+
+      @media (max-width: 1024px)
+        font-size: 28px
+      @media (max-width: 768px)
+        font-size: 24px
+      @media (max-width: 480px)
+        font-size: 20px
+
+    .newsletterDescription
+      font-family: 'Poppins'
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 18px
+      color: #FFFFFF
+
+      @media (max-width: 767px)
+        font-size: 12px
+
+      @media (max-width: 1024px)
+        font-size: 12px
+      @media (max-width: 768px)
+        font-size: 10px
+      @media (max-width: 480px)
+        font-size: 8px
+
+  .subscribe
+    display: flex
+    flex-direction: column
+    gap: 6px
+    margin-top: 20px
+
+    @media (min-width: 768px)
+      flex-direction: row
+      margin-top: 0
+
+    input
+      box-sizing: border-box
+      padding: 12px 24px
+      background: #FFFFFF
+      border: 1px solid #E7E7E7
+      border-radius: 8px
+      font-family: 'Poppins'
+      font-size: 14px
+      color: #676767
+      width: 100%
+      height: 42px
+
+      @media (min-width: 768px)
+        width: 233px
+
+      @media (max-width: 767px)
+        width: 100%
+        font-size: 12px
+        padding: 10px 20px
+
+      @media (max-width: 1024px)
+        font-size: 12px
+      @media (max-width: 768px)
+        font-size: 10px
+      @media (max-width: 480px)
+        font-size: 8px
+
+      @media (max-width: 850px)
+        width: 80%
+        font-size: 12px
+        padding: 10px 20px
+
+    button
+      background: #F7CA11
+      border-radius: 8px
+      font-family: 'Poppins'
+      font-weight: 600
+      font-size: 14px
+      color: #161615
+      cursor: pointer
+      width: 100%
+      height: 42px
+
+      @media (min-width: 768px)
+        width: 150px
+
+      @media (max-width: 767px)
+        width: 100%
+        font-size: 12px
+        padding: 10px 20px
+
+      @media (max-width: 1024px)
+        font-size: 12px
+      @media (max-width: 768px)
+        font-size: 10px
+      @media (max-width: 480px)
+        font-size: 8px
+
+      @media (max-width: 860px)
+        width: 80%
+        font-size: 12px
+        padding: 10px 20px
+        h4: 16px
+
+  .terms
+    display: flex
+    align-items: center
+    gap: 8px
+    margin-top: 10px
+
+    input[type="checkbox"]
+      width: 16px
+      height: 16px
+
+    label
+      font-family: 'Poppins'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 21px
+      color: #FFFFFF
+
+      @media (max-width: 767px)
+        font-size: 12px
+
+.footerBottom
+  width: 100%
+  text-align: center
+  font-family: 'Poppins'
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 21px
+  padding-top: 3px
+  color: rgba(40, 40, 40, 0.18)
+  border-top: 1px solid #e1e1e1
+  background-color: #FFFF
+
+  p
+    font-size: 12px
+    color: #5f5f5f
+    font-family: 'Poppins'
+
+    @media (max-width: 1024px)
+      font-size: 10px
+    @media (max-width: 768px)
+      font-size: 8px
+    @media (max-width: 480px)
+      font-size: 6px
+
+
+@media (min-width: 1440)
+  .newsletter
+
+   padding: 0px 30px

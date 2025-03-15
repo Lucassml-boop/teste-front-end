@@ -1,0 +1,173 @@
+.sliderWrapper
+  position: relative
+  max-width: 1360px
+  margin: 0 auto
+  padding: 5px 0
+  padding-bottom: 20px
+  margin-left: 21px
+
+.menu
+  display: flex
+  align-items: center
+  max-width: 1280px
+  max-height: 40px
+  display: flex
+  justify-content: space-between
+  border: 1px solid #e0e0e0
+  margin-bottom: 20px
+  font-family: var(--font-poppins)
+  font-weight: 400
+  margin-left: 36px
+
+.menuItem
+  max-width: 215px
+  flex: 1
+  padding: 6px 20px
+  text-align: center
+  cursor: pointer
+  font-size: 16px
+  color: #3B3B3B
+  border-right: 1px solid #e0e0e0
+  font-weight: light
+  font-family: var(--font-poppins)
+
+  &:last-child
+    border-right: none
+
+  &:hover
+    background-color: #f5f5f5
+
+.active
+  color: #3442B5
+  font-weight: bold
+
+.sliderContainer
+  position: relative
+  overflow: hidden
+
+.productCard
+  background-color: #fff
+  border-radius: 10px
+  padding: 15px
+  text-align: center
+  box-shadow: 0 4px 8px #b3b3b3
+  transition: transform 0.2s, box-shadow 0.2s
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 270px
+  height: 500px
+  margin: 4x 5px
+  padding-bottom: 10px
+  margin-bottom: 20px
+
+  &:hover
+    transform: translateY(-5px)
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+
+.productImage
+  width: 100%
+  height: auto
+  margin-bottom: 15px
+
+.productName
+  font-size: 16px
+  color: #3F3F40
+  font-weight: 500
+  margin-bottom: 10px
+  text-align: left
+
+.oldPrice
+  font-size: 14px
+  color: #999
+  text-decoration: line-through
+  margin-bottom: 5px
+  text-align: left
+
+.newPrice
+  font-size: 20px
+  color: #3F3F40
+  font-weight: bold
+  margin-bottom: 10px
+  text-align: left
+
+.installments
+  font-size: 14px
+  color: #333
+  margin-bottom: 15px
+  text-align: left
+
+.freeShipping
+  font-size: 14px
+  color: #3d27b7
+  margin-bottom: 15px
+  text-align: left
+
+.buyButton
+  background-color: #3442B5
+  color: #fff
+  padding: 5px 20px
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  font-size: 16px
+
+  &:hover
+    background-color: #3d27b7
+
+.swiperButtonPrev, .swiperButtonNext
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  width: 40px
+  height: 40px
+  color: #fff
+  border-radius: 50%
+  z-index: 1000
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.swiperButtonPrev
+  left:-40px
+.swiperButtonNext
+  right: -6px
+
+@media (min-width: 1500px)
+  .sliderWrapper
+    margin-left: auto
+    margin-right: auto
+
+  .sliderContainer
+    margin-left: 50px
+
+  .swiperButtonPrev
+    left:-40px
+  .swiperButtonNext
+    right: -6px
+
+  .menu
+    margin-right: 41px
+    margin-left: 89px
+
+
+@media  (max-width: 1282px)
+.menu
+  margin-right: 50px
+  margin-left: 36px
+
+
+@media (min-width: 1439px) and (max-width: 1499px)
+  .sliderWrapper
+    display: block
+    margin-left: 41px
+
+  .menu
+    margin-right: 52px
+    margin-left: 45px
+
+  .swiperButtonPrev
+    left: -55px
+  .swiperButtonNext
+    right: -6px

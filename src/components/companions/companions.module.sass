@@ -1,0 +1,69 @@
+.parceirosContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  max-width:  1281px
+  padding-top: 38px
+  margin: 0 auto
+  gap: 13px
+
+.parceiroItem
+  position: relative
+  width: 634px
+  height: 350px
+  border-radius: 15px
+  overflow: hidden
+
+.image
+  border-radius: 15px
+  object-fit: cover
+
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.2)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  padding: 20px
+  border-radius: 15px
+  box-sizing: border-box
+  color: #fff
+  font-family: var(--font-poppins)
+
+.title
+  margin-top: 60px
+  font-size: 40px
+  font-weight: 700
+  margin-left: 10px
+  margin-bottom: 5px
+
+  color: #fff
+
+.description
+  font-size: 16px
+  font-weight: 400
+  margin-left: 10px
+  margin-bottom: 20px
+  max-width: 186px
+  max-height: 128px
+
+.button
+  background-color: #f7ca11
+  color: #271c47
+  margin-left: 10px
+  font-weight: 900
+  padding: 10px 20px
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  font-size: 16px
+  transition: background-color 0.3s
+
+  &:hover
+    background-color: #271c47
+    color: #FFFF
