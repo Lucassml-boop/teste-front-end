@@ -1,0 +1,290 @@
+.headerContainer
+  max-width: 1280px
+  margin: 0 auto
+  background-color: #ece4e4
+  font-family: 'Poppins', sans-serif
+  font-weight: bold
+  width: 100%
+
+.topBar
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: clamp(3px, 1vw, 8px) clamp(8px, 2vw, 15px)
+  background-color: #fff
+  font-size: clamp(8px, 1.5vw, 12px)
+  border-bottom: 1px solid #e1e1e1
+  gap: clamp(5px, 1vw, 15px)
+  flex-wrap: nowrap
+  overflow: hidden
+
+  @media (max-width: 768px)
+    padding: 6px 8px
+    gap: 8px
+
+  @media (max-width: 480px)
+    padding: 4px 5px
+    gap: 4px
+    font-size: clamp(7px, 2vw, 10px)
+
+  @media (max-width: 320px)
+    padding: 3px 4px
+    gap: 2px
+    font-size: 7px
+
+.topBarItem
+  display: flex
+  align-items: center
+  font-weight: 500
+  color: #9f9f9f
+  min-width: 0
+  flex: 1
+  text-align: center
+  justify-content: center
+
+  @media (max-width: 768px)
+    flex-direction: column
+    font-size: clamp(7px, 1.5vw, 9px)
+
+  @media (max-width: 480px)
+    flex-direction: column
+    font-size: clamp(6px, 2vw, 8px)
+
+  @media (max-width: 320px)
+    font-size: 6px
+
+  svg
+    font-size: clamp(10px, 1.8vw, 16px)
+    color: #666
+    margin-right: clamp(2px, 0.5vw, 5px)
+    flex-shrink: 0
+
+    @media (max-width: 768px)
+      margin-right: 0
+      margin-bottom: 2px
+      font-size: clamp(8px, 1.5vw, 12px)
+
+    @media (max-width: 480px)
+      font-size: clamp(7px, 2vw, 10px)
+      margin-bottom: 1px
+
+    @media (max-width: 320px)
+      font-size: 8px
+
+  p
+    margin: 0
+    color: #9F9F9F
+    font-weight: bold
+    font-size: inherit
+    line-height: 1.1
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+    @media (max-width: 768px)
+      white-space: normal
+      text-align: center
+      line-height: 1
+
+    @media (max-width: 480px)
+      font-size: clamp(6px, 1.8vw, 8px)
+
+    @media (max-width: 320px)
+      font-size: 6px
+
+    span
+      font-weight: bold
+      color: #3d27b7
+
+.mainBar
+  display: flex
+  align-items: center
+  padding: 10px 15px
+  background-color: #FFFFFF
+  justify-content: space-between
+  flex-wrap: wrap
+  gap: 15px
+
+  @media (max-width: 768px)
+    flex-direction: column
+    align-items: center
+    padding: 15px 10px
+
+.logoContainer
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-shrink: 0
+
+  @media (max-width: 768px)
+    order: 1
+    margin-bottom: 10px
+
+  .logo
+    max-width: 100%
+    height: auto
+
+.searchBar
+  display: flex
+  align-items: center
+  width: 100%
+  max-width: 657px
+  height: 48px
+  background-color: #f4f4f4
+  border-radius: 10px
+  flex: 1
+
+  @media (max-width: 768px)
+    order: 3
+    max-width: 100%
+    margin: 10px 0
+
+  @media (max-width: 480px)
+    height: 40px
+
+.searchInput
+  flex-grow: 1
+  height: 100%
+  padding: 0 15px
+  border: none
+  border-radius: 10px 0 0 10px
+  outline: none
+  font-size: clamp(12px, 2vw, 14px)
+  color: #9F9F9F
+  background-color: #f4f4f4
+
+.searchButton
+  background-color: transparent
+  border: none
+  padding: 0 15px
+  cursor: pointer
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 0 10px 10px 0
+
+  svg
+    color: #666
+    font-size: clamp(16px, 2.5vw, 18px)
+
+.iconSet
+  display: flex
+  align-items: center
+  gap: clamp(15px, 3vw, 25px)
+  flex-shrink: 0
+
+  @media (max-width: 768px)
+    order: 2
+    gap: 20px
+
+  @media (max-width: 480px)
+    gap: 15px
+
+  svg
+    font-size: clamp(18px, 3vw, 20px)
+    color: #666
+    cursor: pointer
+
+.hamburgerButton
+  background: none
+  border: none
+  cursor: pointer
+  font-size: clamp(20px, 4vw, 24px)
+  color: #666
+  display: none
+
+  @media (max-width: 800px)
+    display: block
+
+.navBar
+  display: flex
+  justify-content: space-around
+  padding: 10px 15px
+  border: 1px
+  background-color: #fff
+  font-size: clamp(10px, 2vw, 12px)
+  color: #9F9F9F
+  border-top: 1px solid #e1e1e1
+  flex-wrap: wrap
+  gap: 10px
+
+  @media (max-width: 800px)
+    flex-direction: column
+    align-items: center
+    text-align: center
+    padding: 15px
+
+  p
+    margin: 0
+    cursor: pointer
+    text-transform: uppercase
+    font-weight: 600
+    color: #9F9F9F
+    font-family: 'Poppins', sans-serif
+    white-space: nowrap
+
+    @media (max-width: 800px)
+      margin-bottom: 10px
+      font-size: 14px
+
+    &.activeCategoryBar
+      color: #3019B2
+
+    &:hover
+      color: #3019B2
+
+  .highlight
+    color: #3d27b7
+    font-weight: 600
+    font-family: 'Poppins', sans-serif
+
+.activeCategoryBar
+  color: #3019B2
+
+.iconWithText
+  display: flex
+  align-items: center
+  gap: 5px
+
+  svg
+    font-size: clamp(16px, 3vw, 18px)
+    color: #666
+    cursor: pointer
+
+@media (max-width: 320px)
+  .headerContainer
+    padding: 0 5px
+
+  .topBar
+    padding: 5px
+    font-size: 9px
+
+  .mainBar
+    padding: 10px 5px
+
+  .searchBar
+    height: 36px
+
+  .iconSet
+    gap: 10px
+
+    svg
+      font-size: 16px
+
+  .navBar
+    font-size: 11px
+    padding: 10px
+
+@media (min-width: 1440px)
+  .headerContainer
+    max-width: 1440px
+
+  .topBar
+    padding: 8px 50px
+
+  .mainBar
+    padding: 15px 50px
+
+  .navBar
+    padding: 12px 50px

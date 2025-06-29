@@ -1,0 +1,390 @@
+.sliderWrapper
+  position: relative
+  max-width: 1360px
+  margin: 0 auto
+  padding: clamp(5px, 1vw, 15px) clamp(20px, 4vw, 40px)
+  padding-bottom: clamp(15px, 3vw, 20px)
+
+  @media (max-width: 1200px)
+    padding: clamp(5px, 1vw, 15px) clamp(15px, 3vw, 30px)
+    padding-bottom: clamp(15px, 3vw, 20px)
+
+  @media (max-width: 768px)
+    padding: 10px 20px 15px 20px
+
+  @media (max-width: 480px)
+    padding: 8px 15px 10px 15px
+
+.menu
+  display: flex
+  align-items: center
+  max-width: 1280px
+  height: clamp(35px, 6vw, 40px)
+  justify-content: space-between
+  border: 1px solid #e0e0e0
+  margin-bottom: clamp(15px, 3vw, 20px)
+  font-family: var(--font-poppins)
+  font-weight: 400
+  margin-left: clamp(15px, 3vw, 36px)
+  margin-right: clamp(15px, 3vw, 36px)
+  overflow-x: auto
+  scrollbar-width: none
+  -ms-overflow-style: none
+
+  &::-webkit-scrollbar
+    display: none
+
+  @media (max-width: 768px)
+    margin: 0 0 15px 0
+    flex-wrap: nowrap
+    overflow-x: auto
+
+  @media (max-width: 480px)
+    margin: 0 0 10px 0
+    height: 32px
+
+.menuItem
+  flex: 1
+  min-width: clamp(100px, 15vw, 215px)
+  padding: clamp(4px, 1vw, 6px) clamp(10px, 2vw, 20px)
+  text-align: center
+  cursor: pointer
+  font-size: clamp(12px, 2.5vw, 16px)
+  color: #3B3B3B
+  border-right: 1px solid #e0e0e0
+  font-weight: light
+  font-family: var(--font-poppins)
+  white-space: nowrap
+
+  &:last-child
+    border-right: none
+
+  &:hover
+    background-color: #f5f5f5
+
+  @media (max-width: 768px)
+    min-width: 120px
+    font-size: 14px
+    padding: 6px 15px
+
+  @media (max-width: 480px)
+    min-width: 100px
+    font-size: 12px
+    padding: 4px 10px
+
+.active
+  color: #3442B5
+  font-weight: bold
+
+.sliderContainer
+  position: relative
+  overflow: hidden
+  margin: 0
+
+  :global(.swiper-slide)
+    height: auto
+    display: flex
+    align-items: stretch
+    box-sizing: border-box
+    
+    @media (min-width: 1020px)
+      height: auto
+
+  @media (max-width: 768px)
+    margin: 0
+
+  @media (max-width: 480px)
+    margin: 0
+
+  @media (max-width: 320px)
+    margin: 0
+
+.productCard
+  background-color: #fff
+  border-radius: clamp(8px, 1.5vw, 10px)
+  padding: clamp(8px, 2vw, 15px)
+  text-align: center
+  box-shadow: 0 4px 8px rgba(179, 179, 179, 0.4)
+  transition: transform 0.2s, box-shadow 0.2s
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin: 0
+  padding-bottom: clamp(6px, 1.5vw, 10px)
+  margin-bottom: clamp(8px, 1.5vw, 15px)  
+  align-self: stretch
+
+
+  &:hover
+    transform: translateY(-3px)
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15)
+
+  @media (max-width: 768px)
+    width: clamp(160px, 28vw, 220px)
+    height: clamp(280px, 40vw, 420px)
+    padding: clamp(8px, 2vw, 12px)
+    margin: 1px
+    margin-bottom: 8px
+    border-radius: 8px
+
+  @media (max-width: 480px)
+    width: clamp(140px, 35vw, 200px)
+    height: clamp(260px, 50vw, 380px)
+    padding: clamp(6px, 2vw, 10px)
+    margin: 0px 1px
+    margin-bottom: 6px
+    border-radius: 6px
+
+  @media (max-width: 320px)
+    width: clamp(120px, 40vw, 160px)
+    height: clamp(240px, 60vw, 320px)
+    padding: 6px
+    margin: 0px
+    margin-bottom: 4px
+    border-radius: 5px
+
+.productImage
+  width: 100%
+  height: auto
+  max-height: clamp(100px, 18vw, 200px)
+  object-fit: contain
+  margin-bottom: clamp(6px, 1.5vw, 15px)
+  border-radius: clamp(2px, 0.5vw, 4px)
+
+  @media (max-width: 768px)
+    max-height: clamp(80px, 15vw, 150px)
+    margin-bottom: clamp(5px, 1vw, 10px)
+
+  @media (max-width: 480px)
+    max-height: clamp(70px, 20vw, 120px)
+    margin-bottom: clamp(4px, 1vw, 8px)
+
+  @media (max-width: 320px)
+    max-height: clamp(60px, 25vw, 100px)
+    margin-bottom: 4px
+
+.productName
+  font-size: clamp(10px, 2.2vw, 16px)
+  color: #3F3F40
+  font-weight: 500
+  margin-bottom: clamp(4px, 1vw, 10px)
+  text-align: left
+  line-height: 1.2
+  font-family: var(--font-poppins)
+  min-height: clamp(24px, 4.4vw, 32px)
+  display: flex
+  align-items: flex-start
+  
+  @media (min-width: 1020px)
+    min-height: 40px
+
+  @media (max-width: 768px)
+    font-size: clamp(9px, 2vw, 14px)
+    margin-bottom: clamp(3px, 0.8vw, 8px)
+    min-height: clamp(20px, 4vw, 28px)
+
+  @media (max-width: 480px)
+    font-size: clamp(8px, 2.5vw, 12px)
+    margin-bottom: clamp(2px, 0.5vw, 6px)
+    line-height: 1.1
+    min-height: clamp(16px, 5vw, 24px)
+
+  @media (max-width: 320px)
+    font-size: 8px
+    margin-bottom: 2px
+    min-height: 16px
+
+.oldPrice
+  font-size: clamp(9px, 1.8vw, 14px)
+  color: #999
+  text-decoration: line-through
+  margin-bottom: clamp(2px, 0.5vw, 5px)
+  text-align: left
+  font-family: var(--font-poppins)
+
+  @media (max-width: 480px)
+    font-size: clamp(7px, 2vw, 10px)
+    margin-bottom: 1px
+
+  @media (max-width: 320px)
+    font-size: 7px
+
+.newPrice
+  font-size: clamp(12px, 2.8vw, 20px)
+  color: #3F3F40
+  font-weight: bold
+  margin-bottom: clamp(4px, 1vw, 10px)
+  text-align: left
+  font-family: var(--font-poppins)
+
+  @media (max-width: 768px)
+    font-size: clamp(11px, 2.5vw, 18px)
+    margin-bottom: clamp(3px, 0.8vw, 8px)
+
+  @media (max-width: 480px)
+    font-size: clamp(10px, 3vw, 16px)
+    margin-bottom: clamp(2px, 0.5vw, 6px)
+
+  @media (max-width: 320px)
+    font-size: 10px
+    margin-bottom: 2px
+
+.installments
+  font-size: clamp(8px, 1.6vw, 14px)
+  color: #333
+  margin-bottom: clamp(4px, 1vw, 15px)
+  text-align: left
+  font-family: var(--font-poppins)
+  line-height: 1.1
+
+  @media (max-width: 480px)
+    font-size: clamp(7px, 1.8vw, 10px)
+    margin-bottom: clamp(2px, 0.5vw, 8px)
+
+  @media (max-width: 320px)
+    font-size: 7px
+    margin-bottom: 2px
+
+.freeShipping
+  font-size: clamp(8px, 1.6vw, 14px)
+  color: #3d27b7
+  margin-bottom: clamp(6px, 1.5vw, 15px)
+  text-align: left
+  font-family: var(--font-poppins)
+  font-weight: 500
+
+  @media (max-width: 480px)
+    font-size: clamp(7px, 1.8vw, 10px)
+    margin-bottom: clamp(4px, 1vw, 10px)
+
+  @media (max-width: 320px)
+    font-size: 7px
+    margin-bottom: 4px
+
+.buyButton
+  background-color: #3442B5
+  color: #fff
+  padding: clamp(6px, 1.5vw, 10px) clamp(12px, 3vw, 20px)
+  border: none
+  border-radius: clamp(3px, 1vw, 5px)
+  cursor: pointer
+  font-size: clamp(10px, 2.2vw, 16px)
+  font-weight: 600
+  font-family: var(--font-poppins)
+  transition: all 0.3s ease
+  width: 100%
+  min-height: clamp(28px, 5vw, 44px)
+  display: flex
+  align-items: center
+  justify-content: center
+
+  @media (min-width: 1024px)
+    width: 230px
+    height: 40px
+
+  &:hover
+    background-color: #3d27b7
+    transform: translateY(-1px)
+    box-shadow: 0 2px 8px rgba(52, 66, 181, 0.3)
+
+  &:active
+    transform: translateY(0)
+
+  @media (max-width: 768px)
+    font-size: clamp(9px, 2.5vw, 14px)
+    padding: clamp(5px, 1.2vw, 8px) clamp(10px, 2.5vw, 16px)
+    min-height: clamp(26px, 4.5vw, 36px)
+    border-radius: 4px
+
+  @media (max-width: 480px)
+    font-size: clamp(8px, 2.8vw, 12px)
+    padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 12px)
+    min-height: clamp(24px, 6vw, 32px)
+    border-radius: 3px
+    font-weight: 500
+
+  @media (max-width: 320px)
+    font-size: 8px
+    padding: 4px 6px
+    min-height: 22px
+    border-radius: 2px
+
+.swiperButtonPrev, .swiperButtonNext
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  width: clamp(30px, 5vw, 40px)
+  height: clamp(30px, 5vw, 40px)
+  color: #fff
+  border-radius: 50%
+  z-index: 1000
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+
+  @media (max-width: 768px)
+    width: 35px
+    height: 35px
+
+  @media (max-width: 480px)
+    width: 30px
+    height: 30px
+
+.swiperButtonPrev
+  left: clamp(-35px, -3vw, -25px)
+
+  @media (max-width: 1200px)
+    left: -30px
+
+  @media (max-width: 768px)
+    left: -25px
+
+  @media (max-width: 480px)
+    left: -20px
+
+.swiperButtonNext
+  right: clamp(-35px, -3vw, -25px)
+
+  @media (max-width: 1200px)
+    right: -30px
+
+  @media (max-width: 768px)
+    right: -25px
+
+  @media (max-width: 480px)
+    right: -20px
+
+@media (min-width: 1500px)
+  .sliderWrapper
+    margin-left: auto
+    margin-right: auto
+    max-width: 1500px
+
+  .sliderContainer
+    margin-left: 60px
+    margin-right: 60px
+
+  .menu
+    margin-right: 60px
+    margin-left: 89px
+
+@media (max-width: 1282px) and (min-width: 769px)
+  .menu
+    margin-right: 50px
+    margin-left: 36px
+
+@media (min-width: 1439px) and (max-width: 1499px)
+  .sliderWrapper
+    display: block
+    margin-left: 41px
+
+  .menu
+    margin-right: 52px
+    margin-left: 45px
+
+  .swiperButtonPrev
+    left: -55px
+
+  .swiperButtonNext
+    right: -6px

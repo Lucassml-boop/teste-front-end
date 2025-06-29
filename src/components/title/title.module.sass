@@ -1,0 +1,106 @@
+.sectionTitleWrapper
+  max-width: 1138px
+  margin: clamp(20px, 4vw, 28px) auto
+  text-align: center
+  padding-top: clamp(15px, 3vw, 20px)
+  padding-left: clamp(15px, 3vw, 20px)
+  padding-right: clamp(15px, 3vw, 20px)
+
+  @media (max-width: 768px)
+    padding-top: 10px
+    margin: 20px auto
+
+  @media (max-width: 480px)
+    margin: 15px auto
+    padding: 8px 10px 0
+
+.sectionTitleWrapper p
+  color: #3F3F40
+  font-weight: bold
+  font-size: clamp(12px, 2.5vw, 14px)
+
+.sectionTitle
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  font-family: 'Poppins', sans-serif
+  font-weight: bold
+  flex-wrap: wrap
+
+  @media (max-width: 768px)
+    flex-direction: column
+
+  @media (max-width: 480px)
+    flex-direction: column
+
+.line
+  flex-grow: 1
+  height: 1px
+  background-color: #e0e0e0
+  margin: 0 clamp(8px, 1.5vw, 10px)
+  font-family: 'Poppins', sans-serif
+  min-width: clamp(20px, 10vw, 50px)
+
+  @media (max-width: 768px)
+    margin: clamp(3px, 1vw, 5px) 0
+    width: clamp(60%, 15vw, 80%)
+    min-width: 100px
+
+  @media (max-width: 480px)
+    width: 70%
+    margin: 3px 0
+
+.children
+  font-size: clamp(20px, 4vw, 30px)
+  font-weight: bold
+  color: #3c28bc
+  margin: 0 clamp(15px, 3vw, 20px)
+  font-family: 'Poppins', sans-serif
+  text-align: center
+  line-height: 1.2
+  white-space: nowrap
+
+  @media (max-width: 768px)
+    font-size: clamp(18px, 4vw, 24px)
+    margin: clamp(8px, 2vw, 10px) 0
+    white-space: normal
+
+  @media (max-width: 480px)
+    font-size: clamp(16px, 4.5vw, 20px)
+    margin: 8px 0
+    white-space: normal
+
+  @media (max-width: 320px)
+    font-size: 16px
+
+.viewAll
+  margin-top: clamp(8px, 1.5vw, 10px)
+  font-size: clamp(12px, 2vw, 14px)
+  color: #333
+  font-weight: 500
+
+  @media (max-width: 768px)
+    font-size: clamp(11px, 2vw, 12px)
+    margin-top: 5px
+
+  @media (max-width: 480px)
+    font-size: 11px
+    margin-top: 4px
+
+@media (min-width: 1440px)
+  .sectionTitleWrapper
+    max-width: 1440px
+    margin: 35px auto
+    padding-top: 25px
+
+  .children
+    font-size: 36px
+    margin: 0 25px
+
+  .line
+    margin: 0 15px
+
+  .viewAll
+    margin-top: 12px
+    font-size: 16px

@@ -1,0 +1,78 @@
+$breakpoint-xs: 320px
+$breakpoint-sm: 480px
+$breakpoint-md: 768px
+$breakpoint-lg: 1024px
+$breakpoint-xl: 1280px
+$breakpoint-xxl: 1440px
+$breakpoint-max: 1920px
+
+@mixin mobile-xs
+  @media (max-width: #{$breakpoint-xs})
+    @content
+
+@mixin mobile-sm
+  @media (max-width: #{$breakpoint-sm})
+    @content
+
+@mixin tablet
+  @media (max-width: #{$breakpoint-md})
+    @content
+
+@mixin desktop-sm
+  @media (max-width: #{$breakpoint-lg})
+    @content
+
+@mixin desktop-md
+  @media (min-width: #{$breakpoint-lg + 1}) and (max-width: #{$breakpoint-xl})
+    @content
+
+@mixin desktop-lg
+  @media (min-width: #{$breakpoint-xl + 1})
+    @content
+
+@mixin desktop-xl
+  @media (min-width: #{$breakpoint-xxl})
+    @content
+
+.container-fluid
+  width: 100%
+  padding-left: clamp(10px, 2vw, 20px)
+  padding-right: clamp(10px, 2vw, 20px)
+  margin: 0 auto
+
+.container
+  width: 100%
+  max-width: 1280px
+  padding-left: clamp(15px, 3vw, 30px)
+  padding-right: clamp(15px, 3vw, 30px)
+  margin: 0 auto
+
+  @media (min-width: #{$breakpoint-xxl})
+    max-width: 1440px
+
+.hidden-xs
+  @include mobile-xs
+    display: none 
+
+.hidden-sm
+  @include mobile-sm
+    display: none 
+
+.hidden-md
+  @include tablet
+    display: none 
+
+.show-xs
+  display: none 
+  @include mobile-xs
+    display: block 
+
+.show-sm
+  display: none 
+  @include mobile-sm
+    display: block 
+
+.show-md
+  display: none 
+  @include tablet
+    display: block
