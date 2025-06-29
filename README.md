@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛍️ Vitrine de Produtos - Econverse
 
 [![React](https://img.shields.io/badge/React-18.3.1-blue?logo=react)](https://reactjs.org/)
