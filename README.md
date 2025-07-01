@@ -76,6 +76,26 @@ npm run dev
 yarn dev
 ```
 
+### 4️⃣ Compilar para Produção
+```bash
+npm run build
+# ou
+yarn build
+```
+
+### 5️⃣ Rodar o Projeto em Produção Localmente
+```bash
+npm run preview
+# ou
+yarn preview
+```
+### 6️⃣ Executar Testes
+```bash
+npm test
+# ou
+yarn test
+```
+
 A aplicação estará disponível em: **http://localhost:5173**
 
 ### Comandos Detalhados
@@ -83,6 +103,15 @@ A aplicação estará disponível em: **http://localhost:5173**
 ```bash
 # Desenvolvimento
 npm run dev          # Servidor local com hot reload (porta 5173)
+
+# Build de produção
+npm run build        # Gera arquivos otimizados em dist/
+
+# Preview da build de produção
+npm run preview      # Servidor local para build (porta 4173)
+
+# Testes (se configurado)
+npm test             # Executa os testes automatizados
 ```
 
 ## 🏗️ Estrutura do Projeto
