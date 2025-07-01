@@ -76,6 +76,8 @@ npm run dev
 yarn dev
 ```
 
+A aplicação estará disponível em: **http://localhost:5173**
+
 ### 4️⃣ Compilar para Produção
 ```bash
 npm run build
@@ -96,7 +98,6 @@ npm test
 yarn test
 ```
 
-A aplicação estará disponível em: **http://localhost:5173**
 
 ### Comandos Detalhados
 
