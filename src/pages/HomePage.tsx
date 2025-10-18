@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import Header from "../components/header";
-import Hero from "../components/banner";
-import Categories from "../components/categories";
+import Hero from "../componentes/banner";
+import Categories from "../componentes/categories";
 import SectionTitle from "../components/title";
 import ProductSlider from "../components/products";
 import Partners from "../components/companions";
