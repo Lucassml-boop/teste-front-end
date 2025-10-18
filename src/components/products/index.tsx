@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "swiper/css";
-import "swiper/css/navigation";
 import styles from "./products.module.sass";
 import Modal from "../showcase/index";
 import Slider from "./Slider";
@@ -25,14 +23,15 @@ export default function Products({ showCategories = true }: ProductsProps) {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    fetch("/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json")
-      .then((response) => {
+    async function fetchProdutos() {
+      try {
+        const response = await fetch(
+          "/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
+        );
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error(`Erro HTTP: ${response.status}`);
         }
-        return response.json();
-      })
-      .then((data) => {
+        const data = await response.json();
         if (Array.isArray(data.products)) {
           setProducts(data.products);
         } else {
@@ -41,8 +40,11 @@ export default function Products({ showCategories = true }: ProductsProps) {
             data
           );
         }
-      })
-      .catch((error) => console.error("Erro ao buscar dados:", error));
+      } catch (error) {
+        console.error("Erro ao buscar dados:", error);
+      }
+    }
+    fetchProdutos();
   }, []);
 
   const categories = [
