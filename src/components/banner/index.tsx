@@ -13,8 +13,14 @@ export default function banner() {
           className={styles.bannerShadow}
         />
         <div className={styles.textOverlay}>
-          <h1>Venha conhecer nossas promoções</h1>
-          <h2>50% Off nos produtos</h2>
+          <h1>
+            Venha conhecer nossas
+            <br />
+            promoções
+          </h1>
+          <h2>
+            <span className={styles.highlight}>50% off</span> nos produtos
+          </h2>
           <button className={styles.ctaButton}>Ver produto</button>
         </div>
       </div>
